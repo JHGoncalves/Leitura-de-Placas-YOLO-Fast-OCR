@@ -1,5 +1,5 @@
-Sistema de Reconhecimento de Placas de Veículos em Python
-1. Sobre o Projeto
+# Sistema de Reconhecimento de Placas de Veículos em Python
+## 1. Sobre o Projeto
 Este projeto é uma aplicação de visão computacional que realiza a detecção e o reconhecimento de placas de veículos a partir de arquivos de vídeo. A pipeline consiste em:
 
 Detecção: Utiliza um modelo YOLOv8 para localizar as coordenadas das placas em cada quadro do vídeo.
@@ -10,7 +10,7 @@ Reconhecimento (OCR): Extrai os caracteres alfanuméricos da placa processada us
 
 Validação: Compara a placa lida com um valor de referência e gera um vídeo de saída com as detecções e o status da validação (Autorizado/Não Autorizado) desenhados em tempo real.
 
-2. Tecnologias Principais
+## 2. Tecnologias Principais
 Python 3.9+
 
 YOLOv8 (Ultralytics)
@@ -21,21 +21,21 @@ OpenCV
 
 NumPy
 
-3. Configuração do Ambiente
+## 3. Configuração do Ambiente
 Este guia assume que você já clonou o repositório e está na pasta raiz do projeto.
 
 a. Crie e Ative um Ambiente Virtual
 
 É fortemente recomendado executar o projeto em um ambiente virtual para gerenciar as dependências de forma isolada.
 
-# Criar o ambiente virtual
+## Criar o ambiente virtual
 python -m venv .venv
 
-# Ativar o ambiente
-# No Linux/macOS:
+## Ativar o ambiente
+No Linux/macOS:
 source .venv/bin/activate
-# No Windows:
-# .venv\Scripts\activate
+## No Windows:
+.venv\Scripts\activate
 
 b. Instale as Dependências
 
@@ -43,7 +43,7 @@ Todas as bibliotecas necessárias estão listadas no arquivo requirements.txt. P
 
 pip install -r requirements.txt
 
-4. Como Utilizar
+## 4. Como Utilizar
 A execução do projeto é controlada por meio de variáveis de configuração no script principal.
 
 a. Posicione seu Vídeo de Entrada
